@@ -34,6 +34,11 @@ public class Amazon extends All_Browsers{
         browser.openBrowser();
         
 		Actions mouse = new Actions(driver);
+		
+		
+		// Github token  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
+		
+		
 		mouse.moveToElement(driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']"))).build().perform();
 		WebElement tittle = driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']"));
 		System.out.println(tittle.getText());
